@@ -2,3 +2,51 @@ theme: jekyll-theme-merlot
 
 title: Test site with github pages
 description: Testing purposes
+
+# Gem settings
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jekyll-github-metadata
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - SITECHANGELOG.md
+# End
+
+# Site permalink settings
+permalink: /:title/
+# End
+# Collections settings
+collections:
+  documentation:
+    output: true
+    permalink: /:collection/:path
+# End
+
+# Site menu settings
+menu:
+  - title: "Blog"
+    url: "/blog"
+  - title: "Documentation"
+    url: "/documentation"
+  - title: "Support"
+    url: "/support"
+# End
+
+category_order:
+  - 'Getting-started'
+  - 'Fundamentals'
+  - 'Platform specifics'
+  - 'Presenters'
+  - 'Plugins'
+  - 'Testing'
+  - 'Samples'
+  - 'Upgrading'
+  - 'TipCalc Tutorial'
+  - 'Contributing'
+- 'Licensing'
